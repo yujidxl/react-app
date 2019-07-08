@@ -1,0 +1,20 @@
+.App {
+  height: 1800px;
+  text-align: center;
+
+  header{
+    width: 16rem;
+    height: 6.4rem /* 300/46.875 */;
+    background: red;
+  }
+
+  .btn{
+    font-size: .768rem /* 36/46.875 */;
+    color: #fff;
+    background: green;
+    border-radius: .042667rem /* 2/46.875 */;
+  }
+}
+
+
+
