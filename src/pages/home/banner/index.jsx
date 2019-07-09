@@ -1,8 +1,8 @@
 import React from 'react';
-import { Carousel, WingBlank } from 'antd-mobile'; 
-import './App.scss';
+import { Carousel, WingBlank } from 'antd-mobile';
+import './index.scss';
 
-class App extends React.Component {
+class Banner extends React.Component {
   state = {
     data: ['1', '2', '3'],
     imgHeight: 176,
@@ -17,7 +17,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="banner">
         <WingBlank>
           <Carousel
             autoplay={true}
@@ -46,10 +46,10 @@ class App extends React.Component {
           </Carousel>
         </WingBlank>
       </div>
-      
+
     );
   }
 }
 
-export default App;
+export default Banner;
 

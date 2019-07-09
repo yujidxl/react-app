@@ -1,0 +1,9 @@
+@import '../../transform.scss';
+
+.rem{
+  background: red;
+  width: rem(46.875);
+  height: rem(46.875);
+  border: 1px solid #ddd;
+}
+
