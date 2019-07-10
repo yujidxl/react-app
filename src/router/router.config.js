@@ -1,8 +1,17 @@
-import Home from '../pages/home/app'
-import Gg from '../pages/products/gg'
-import Kk from '../pages/products/kk'
+import asyncComponent from '../utils/AsyncComponent'
+const Home = asyncComponent(() => import("../pages/home/app"));
+const Gg = asyncComponent( () => import("../pages/products/gg"));
+const Kk = asyncComponent( () => import("../pages/products/kk"));
+const Product = asyncComponent( () => import("../pages/products"));
 const routes = [
-  
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/products',
+    component: Product,
+  },
   {
     path: '/products/gg',
     component: Gg
@@ -10,10 +19,7 @@ const routes = [
   {
     path: '/products/kk',
     component: Kk
-  },
-  {
-    path: '/',
-    component: Home
-  },
+  }
 ]
+
 export default  routes;

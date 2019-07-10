@@ -10,7 +10,7 @@ export default function(){
       <Switch>
         {
           RouteConfig.map( (val, key) =>(
-            <Route path={val.path} key={key} component={val.component} exact={val.path === '/'? true: false}></Route>
+            <Route path={val.path} key={key} component={val.component} exact></Route>
           ))
         }
         <Route component={Home}></Route>

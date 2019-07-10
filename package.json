@@ -2,6 +2,7 @@
   "name": "react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "//s.thsi.cn/js/m/kh/action/2018/chexian/",
   "dependencies": {
     "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",
